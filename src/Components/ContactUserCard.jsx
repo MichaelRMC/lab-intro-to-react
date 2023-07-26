@@ -32,3 +32,5 @@ function ContactUserCard() {
 		</>
 	)
 }
+
+export default ContactUserCard
