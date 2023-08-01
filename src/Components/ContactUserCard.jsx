@@ -1,36 +1,21 @@
-const contacts = [
-{id: 1
- fullName: faker.person.fullName,
- jobTitle: faker.person.jobTitle
-}
-{id: 2
- fullName: faker.person.fullName,
- jobTitle: faker.person.jobTitle
-}
-{id: 3
- fullName: faker.person.fullName,
- jobTitle: faker.person.jobTitle
-}
-{id: 4
- fullName: faker.person.fullName,
- jobTitle: faker.person.jobTitle
-}
-]
-	 
+import React from "react";
+
+const contacts = {
+  fullName: faker.person.fullName,
+  jobTitle: faker.person.jobTitle,
+};
+
 function ContactUserCard() {
-	return (
-		<>
-		{
-			contacts.map(contact => {
-				return (<article>
-			<h2>{contact.fullName}</h2>
-			<span>{contact.jobTitle}</span>
-			<span>Ullamco deserunt ullamco minim mollit irure.</span>
-		 </article>)
-			})
-		}
-		</>
-	)
+  return (
+    <>
+      <article>
+        <img src="https://www.seekpng.com/png/full/349-3499598_portrait-placeholder-placeholder-person.png" />
+        <h2>{contacts.fullName}</h2>
+        <span>{contacts.jobTitle}</span>
+        <span>Ullamco deserunt ullamco minim mollit irure.</span>
+      </article>
+    </>
+  );
 }
 
-export default ContactUserCard
+export default ContactUserCard;
